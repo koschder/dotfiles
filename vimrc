@@ -226,7 +226,7 @@ let g:space_no_search = 1
 
 " Solarized {{{2
 let g:solarized_menu=0
-set background=light
+set background=dark
 silent! colorscheme solarized
 if exists('*togglebg#map')
   call togglebg#map("<F5>")
