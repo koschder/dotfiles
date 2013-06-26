@@ -4,8 +4,10 @@ set bg=dark
 "if &background == "dark"
     "hi normal guibg=black
 "endif
-set guifont=LetterGothicMono:h18
+set guifont=Ubuntu\ Mono\ 10
 silent! colorscheme solarized
+
+set lines=50 columns=180
 
 if exists('*HexHighlight()')
   " http://www.vim.org/scripts/script.php?script_id=2937
