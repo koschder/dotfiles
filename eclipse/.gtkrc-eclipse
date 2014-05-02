@@ -1,0 +1,42 @@
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#000000\nselected_bg_color:#f07746\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#F2F1F0\ntooltip_bg_color:#f5f5c5\nlink_color:#DD4814"                                                 
+style "gtkcompact" {
+    GtkButton::default_border={0,0,0,0}
+    GtkButton::default_outside_border={0,0,0,0}
+    GtkButtonBox::child_min_width=0
+    GtkButtonBox::child_min_heigth=0
+    GtkButtonBox::child_internal_pad_x=0
+    GtkButtonBox::child_internal_pad_y=0
+    GtkMenu::vertical-padding=1
+    GtkMenuBar::internal_padding=0
+    GtkMenuItem::horizontal_padding=4
+    GtkToolbar::internal-padding=0
+    GtkToolbar::space-size=0
+    GtkOptionMenu::indicator_size=0
+    GtkOptionMenu::indicator_spacing=0
+    GtkPaned::handle_size=4
+    GtkRange::trough_border=0
+    GtkRange::stepper_spacing=0
+    GtkScale::value_spacing=0
+    GtkScrolledWindow::scrollbar_spacing=0
+    GtkTreeView::vertical-separator=0
+    GtkTreeView::horizontal-separator=0
+    GtkTreeView::fixed-height-mode=TRUE
+    GtkWidget::focus_padding=0
+}
+class "GtkWidget" style "gtkcompact"
+
+# Make tabs smaller
+
+style "compact-toolbar" {
+  GtkToolbar::internal-padding = 0
+    xthickness = 1
+    ythickness = 1
+}
+
+style "compact-button" {
+  xthickness = 0
+    ythickness = 0
+}
+
+class "GtkToolbar" style "compact-toolbar"
+widget_class "*<GtkToolbar>*<GtkButton>" style "compact-button"

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=ECLIPSENAME
+Exec=env UBUNTU_MENUPROXY=0 /home/lukas/eclipse-launchers/ECLIPSENAME-launcher.sh
+Type=Application
+Icon=/home/lukas/opt/ECLIPSENAME/icon.xpm
