@@ -120,3 +120,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:$HOME/bin # Add ~/bin to PATH
 PATH=$PATH:$HOME/opt/sbt/bin # Add sbt to PATH
 PATH=$PATH:$HOME/opt/gradle-1.8/bin # Add gradle to path
+PATH=$PATH:$HOME/opt/adt/sdk/platform-tools # Add adb to path
