@@ -123,3 +123,7 @@ PATH=$PATH:$HOME/opt/gradle-1.8/bin # Add gradle to path
 PATH=$PATH:$HOME/opt/android-sdk-linux/platform-tools # Add adb to path
 PATH=$PATH:$HOME/opt/activator/bin
 PATH=$PATH:$HOME/opt/node/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
